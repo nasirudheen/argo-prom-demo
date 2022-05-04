@@ -20,7 +20,7 @@ spec:
         path: 'tenants/{{tenant.id}}'
         helm:
           valueFiles:
-            - values.{{tenant.id}}.yaml
+            - values.yaml
       destination:
         server: '{{k8s_cluster.address}}'
         namespace: '{{k8s_cluster.namespace}}'
